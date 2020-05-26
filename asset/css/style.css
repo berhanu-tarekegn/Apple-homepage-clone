@@ -1,0 +1,38 @@
+
+.header {
+    background:url("../images/your_verse_hero.jpg")  50% 100% no-repeat;
+    height: 70vh;
+  
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.menu-item {
+    background: #efefee;
+    list-style: none;
+    padding: 10px 20px;
+    border-right: 1px solid black;
+    flex: 1;
+}
+
+.menu-item i {
+    color: silver;
+}
+
+.promotion {
+    width: 80%;
+    margin: auto 200px;
+}
+
+.promo {
+    float: left;
+}
