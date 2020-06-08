@@ -1,8 +1,23 @@
 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section */
+
 .header {
     background:url("../images/your_verse_hero.jpg")  50% 100% no-repeat;
     height: 70vh;
+    width: 80%;
+    margin: auto;
   
+}
+
+.nav-menu {
+    padding-top: 80px;
+    
 }
 
 .menu {
@@ -17,6 +32,14 @@
 }
 
 .menu-item {
+    flex-grow: 1;
+}
+
+.search:active {
+    flex-grow: 2;
+}
+
+.menu-item {
     background: #efefee;
     list-style: none;
     padding: 10px 20px;
@@ -28,11 +51,77 @@
     color: silver;
 }
 
+/* Promo section  */
+
+.promotion-article {
+    margin: auto;
+    padding: 2px 80px;
+}
+
 .promotion {
-    width: 80%;
-    margin: auto 200px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin-top: 2px;
+    margin: auto;
 }
 
 .promo {
-    float: left;
+    flex: 1;
+    max-width: 364px;
+    height: 200px; 
 }
+
+.promo1 {
+    background: url("../images/promo_iphone5s.jpg") 0 0 no-repeat;
+}
+
+.promo2 {
+    background: url("../images/promo_iphone5c.jpg") 0 0 no-repeat;
+}
+
+.promo3 {
+    background: url("../images/promo_30_years.jpg") 0 0 no-repeat;
+}
+.promo4 {
+    background: url("../images/promo_supplier_responsibility.jpg") 0 0 no-repeat;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    max-width: 60%;
+    margin: auto;
+    color: #6e6e6e;
+    font-size: .8334em;
+    line-height: 1.2;
+}
+
+.ft-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ft-link {
+    padding: 0 4px;
+    border-right: 1px solid #6e6e6e;
+}
+
+.ft-li8 {
+    border: none;
+}
+
+footer {
+    padding: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 136, 204);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
