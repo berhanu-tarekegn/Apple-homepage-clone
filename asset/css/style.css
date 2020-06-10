@@ -1,11 +1,20 @@
 
-body {
+* {
     box-sizing: border-box;
-    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
     margin: 0;
     padding: 0;
 }
 
+body {
+    box-sizing: border-box;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+}
 /* Header section */
 
 .header {
@@ -13,7 +22,12 @@ body {
     height: 70vh;
     width: 80%;
     margin: auto;
+    background-size: cover;
   
+}
+
+.big-title {
+    margin-top: 60px;
 }
 
 .nav-menu {
@@ -24,112 +38,141 @@ body {
 .menu {
     display: flex;
     width: 60%;
-    border: 1px solid black;
+    height: 37px;
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    background: #707070;
-    z-index: 99999;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
-    background: url('../images/download.png') no-repeat 50% 50%;
+    
 }
 
 .menu-item {
-    flex-grow: 1;
-    background: none;
-}
-
-.menu-item {
-   background: url('http://images.apple.com/global/nav/images/globalnav_text.png') no-repeat 50% 0;
-}
-
-.search:active {
-    flex-grow: 2;
-}
-
-.menu-item {
-    background: #efefee;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 37px;
+    color: #ffffff;
     padding: 10px 20px;
-    border-right: 1px solid black;
+    background: rgb(142,142,147);
+    background: linear-gradient(to bottom, #888 0%, #707070 49%, #5e5e5e 50%, #717571 100%);
     flex: 1;
 }
 
-.menu-item i {
-    color: silver;
+.apple {
+    border-right: 1px solid rgb(142,142,147);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-h2, h1 {
-    font-weight: bold;
-    color: white;
+.nav-search-input {
+    border-right: 1px solid rgb(142,142,147);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.title {
-    width: 530px;    
-    margin-bottom: -85px;
-    margin: auto;
-    font-size: 24px;
-    line-height: 36px;
-    align-items: center;
+nav ul li + li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #4c4c4c;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  }
+  
+  nav ul li {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(to bottom, #888 0%, #707070 49%, #5e5e5e 50%, #3e833e 100%);
+  }
+
+nav ul li:hover:not(:last-child),
+nav ul li:active:not(:last-child) {
+  background: linear-gradient(to bottom, #5c5c5c 0%, #434343 49%, #383838 50%, #525252 100%);
 }
 
-.sub-title {
-    font-size: 16px;
-    margin-bottom: 27px;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+nav ul li:not(:last-child) a:active {
+  box-shadow: inset 0 2px 4px 1px #000;
 }
+
+.nav-search-input {
+  flex: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-search-input input {
+    width: 100%;
+    background: transparent;
+    padding-right: 18px;
+    padding-left: 22px;
+    height: 19px;
+    line-height: 19px;
+    color: #fff;
+    border-radius: 9px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.398438) 0 -2px 0, rgba(255, 255, 255, 0.199219) 0 1px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #nav-search-input:focus {
+    outline: 0;
+    background: #fff;
+    width: 140px;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 0 5px 20px;
+  }
+  
 
 /* Promo section  */
 
 .promotion-article {
-    margin: auto;
-    padding: 2px 80px;
+    width: 80%;
+    margin: 2px auto;
 }
 
 .promotion {
     display: flex;
     justify-content: space-around;
-    max-width: 1440px;
-    margin-top: 2px;
+    max-width: 100%;
     margin: auto;
 }
 
 .promo {
     flex: 1;
-    max-width: 364px;
+    max-width: 25%;
     height: 200px; 
 }
-
-.promo1 {
-    background: url("../images/promo_iphone5s.jpg") 0 0 no-repeat;
-}
-
-.promo2 {
-    background: url("../images/promo_iphone5c.jpg") 0 0 no-repeat;
-}
-
-.promo3 {
-    background: url("../images/promo_30_years.jpg") 0 0 no-repeat;
-}
-.promo4 {
-    background: url("../images/promo_supplier_responsibility.jpg") 0 0 no-repeat;
+.promo a img {
+    width: 100%;
 }
 
 .grid-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    max-width: 60%;
+    column-gap: 20px;
+    row-gap: 10px;
+    max-width: 80%;
     margin: auto;
     color: #6e6e6e;
     font-size: .8334em;
     line-height: 1.2;
 }
 
-.ft-2 {
+.ft-1, .ft-3 {
     display: flex;
     justify-content: flex-end;
+}
+
+.ft-3 {
+    padding-right: 90px;
+}
+
+.ft-2 {
+    display: flex;
+    justify-content: start;
 }
 
 .ft-link {
