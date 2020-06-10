@@ -2,7 +2,7 @@
 
 > This is a clone of the The Apple home page.
 
-![screenshot](./assets/imges/apple.png)
+![screenshot](./assets/images/apple.png)
 
 This project is a replica of the the The Apple home page. It has currnet news with different supplimental docs like image, text. Has related links sections.
 
