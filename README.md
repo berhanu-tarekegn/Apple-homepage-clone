@@ -10,7 +10,6 @@ This project is a replica of the the The Apple home page. It has currnet news wi
 
 - HTML5,
 - FLEX,
-- GRID,
 - CSS3.
 
 ## Live Demo
