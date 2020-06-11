@@ -1,0 +1,209 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+}
+
+.centered-flex {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header section */
+
+.header {
+  background: url("../images/your_verse_hero.jpg")  50% 100% no-repeat;
+  height: 70vh;
+  width: 80%;
+  margin: auto;
+  background-size: cover;
+  background-position: cover;
+}
+
+.big-title {
+  margin-top: 60px;
+}
+
+.nav-menu {
+  padding-top: 80px;
+}
+
+.menu {
+  display: flex;
+  width: 60%;
+  height: 37px;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 37px;
+  color: #fff;
+  background: rgb(142, 142, 147);
+  background: linear-gradient(to bottom, #888 0%, #707070 49%, #5e5e5e 50%, #717571 100%);
+  flex: 1;
+}
+
+.apple {
+  border-right: 1px solid rgb(142, 142, 147);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(0, 136, 204);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #4c4c4c;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+nav ul li {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(to bottom, #888 0%, #707070 49%, #5e5e5e 50%, #3e833e 100%);
+}
+
+nav ul li:hover:not(:last-child),
+nav ul li:active:not(:last-child) {
+  background: linear-gradient(to bottom, #5c5c5c 0%, #434343 49%, #383838 50%, #525252 100%);
+}
+
+nav ul li:not(:last-child) a:active {
+  box-shadow: inset 0 2px 4px 1px #000;
+}
+
+.nav-search-input {
+  flex: 2;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid rgb(142, 142, 147);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-search-input input {
+  width: 100%;
+  background: transparent;
+  padding-right: 18px;
+  padding-left: 22px;
+  height: 19px;
+  line-height: 19px;
+  color: #fff;
+  border-radius: 9px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.398438) 0 -2px 0, rgba(255, 255, 255, 0.199219) 0 1px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-search-input:focus {
+  outline: 0;
+  background: #fff;
+  width: 140px;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 0 5px 20px;
+}
+
+/* Promo section  */
+
+.promotion-article {
+  width: 80%;
+  margin: auto;
+}
+
+.promotion {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+}
+
+.promo {
+  flex: 1;
+  max-width: 25%;
+  height: 200px;
+}
+
+.promo a img {
+  width: 100%;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  max-width: 80%;
+  margin: auto;
+  color: #6e6e6e;
+  font-size: 0.8334em;
+  line-height: 1.2;
+}
+
+.ft-1,
+.ft-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ft-3 {
+  padding-right: 90px;
+}
+
+.ft-2 {
+  display: flex;
+  flex-grow: 2;
+  justify-content: start;
+}
+
+.ft-link {
+  padding: 0 4px;
+  border-right: 1px solid lightgray;
+}
+
+.ft-li8 {
+  border: none;
+}
+
+footer {
+  padding: 1.5em;
+}
